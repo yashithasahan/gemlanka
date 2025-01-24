@@ -3,8 +3,8 @@ import Drawer from "./Drawer";
 
 const Header: React.FC = () => {
   return (
-    <>
-      <header className="bg-gray-800 text-white p-4 hidden md:flex justify-between items-center ">
+    <div className="bg-gray-800 ">
+      <header className=" text-white p-4 hidden md:flex justify-between items-center mx-auto max-w-[1200px]  ">
         <h1 className="text-xl">Gem Lanka</h1>
 
         <nav className="hidden md:flex space-x-4">
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       <div className="md:hidden ">
         <Drawer />
       </div>
-    </>
+    </div>
   );
 };
 
