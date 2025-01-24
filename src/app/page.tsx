@@ -1,5 +1,6 @@
 import ItemCard from "@/components/AddCard";
 import Carousel from "@/components/Carousel";
+import Pagination from "@/components/Pagination";
 import React from "react";
 
 export default function Home() {
@@ -71,6 +72,7 @@ export default function Home() {
           location="Colombo, Sri Lanka"
           dateTime="2023-10-01 10:00 AM"
         />
+        <Pagination />
       </div>
     </div>
   );
