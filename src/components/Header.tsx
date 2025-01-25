@@ -19,7 +19,9 @@ const Header: React.FC = () => {
           </a>
         </nav>
       </header>
-      <Drawer />
+      <div className="md:hidden">
+        <Drawer />
+      </div>
     </>
   );
 };

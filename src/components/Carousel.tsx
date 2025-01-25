@@ -25,7 +25,7 @@ const Carousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-32  rounded-md overflow-hidden">
+    <div className="relative w-full h-32  rounded-md overflow-hidden ">
       <div
         className="absolute inset-0 bg-cover bg-center transition-all duration-500"
         style={{ backgroundImage: `url(${images[currentSlide]})` }}
