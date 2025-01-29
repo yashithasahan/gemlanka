@@ -1,5 +1,5 @@
 "use client";
-import { AlignJustify, X } from "lucide-react";
+import { AlignJustify, MapPin, SlidersVertical, X } from "lucide-react";
 import React, { useState, useEffect } from "react";
 
 const Drawer: React.FC = () => {
@@ -16,11 +16,24 @@ const Drawer: React.FC = () => {
 
   return (
     <>
-      <div className="bg-primary p-4 relative flex flex-row gap-2 text-white">
-        <button onClick={() => setIsOpen(!isOpen)} aria-label="Open drawer">
-          <AlignJustify color="white" />
-        </button>
-        <span>Gem Lanka</span>
+      <div className="bg-primary  relative  text-white ">
+        <div className="flex flex-row gap-2 px-2 py-4">
+          <button onClick={() => setIsOpen(!isOpen)} aria-label="Open drawer">
+            <AlignJustify color="white" />
+          </button>
+          <span>Gem Lanka</span>
+        </div>
+        <div className=" bg-white p-2 flex flex-row gap-4 items-center shadow ">
+          <input
+            type="text"
+            className="border w-full border-gray-200 rounded-md p-1 text-gray-600 focus:outline-none "
+            placeholder="Search"
+          ></input>
+          <div className="flex  items-center text-black gap-2">
+            <MapPin size={18} color="black" /> Location
+          </div>
+          <SlidersVertical color="black" size={24} />
+        </div>
       </div>
 
       <div
