@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import placeholder from "@/public/images/placeholder.png"
-
+import placeholder from "@/public/images/placeholder.png";
 interface ItemCardProps {
   imageUrl: string;
   title: string;
